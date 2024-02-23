@@ -1,0 +1,12 @@
+.Wrapper {
+	max-width: 1050px;
+	margin: 0 auto;
+	min-height: 100vh;
+	padding: 1em;
+}
+
+.AppContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}

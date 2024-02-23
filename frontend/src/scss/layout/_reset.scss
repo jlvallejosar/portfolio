@@ -1,0 +1,151 @@
+/* You can add global styles to this file, and also import other style files */
+/* Reset the document */
+
+// Reseteamos margin y paddongs de todas las etiquetas
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	vertical-align: baseline;
+}
+
+// Evitamos problemas con imagenes
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+img,
+picture,
+video,
+iframe,
+figure {
+	max-width: 100%;
+	width: 100%;
+	display: block;
+}
+
+// Reset para los enlaces para funcionar como cajas
+
+a {
+	display: block;
+}
+
+// ...Exepto en los que se encuentran en parrafos
+
+p a {
+	display: inline;
+}
+
+// Quitamos los puntos de los li
+
+li {
+	list-style-type: none;
+}
+
+// Configuramos anclas suaves
+
+html {
+	scroll-behavior: smooth;
+}
+
+// Desactivamos estilops por defecto de las principales etiquetas de texto
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+	font-size: 0.9rem;
+	font-weight: inherit;
+	font-style: inherit;
+	color: inherit;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+// Evitamos problemas con los psudoelemntos de quotes
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: '';
+	content: none;
+}
+
+// configuramos el texto que seleccionamos
+::selection {
+	background-color: rebeccapurple;
+	color: aqua;
+}
+
+// Nivelamos problemas de tipografia y colocacion de formularios
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+	font-family: inherit;
+	font-size: inherit;
+	hyphens: auto;
+	background-color: transparent;
+	display: block;
+	color: inherit;
+	// appearance: none; Opcional
+}
+
+// Reseteamos las tablas
+
+table,
+tr,
+td {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// Evitamos problemas con SVG
+
+svg {
+	width: 100%;
+	display: block;
+	fill: currentColor;
+}
+
+// Configuramos la tipografia de toda la web
+
+body {
+	background-color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	min-height: 100vh;
+	font-size: 100%;
+	line-height: 1.6em;
+}
